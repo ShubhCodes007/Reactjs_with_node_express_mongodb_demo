@@ -1,0 +1,127 @@
+/* Register.module.css */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #bae8d8, #7a9fdf);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.reg-form {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+label {
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.preview-img {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin-top: -8px;
+}
+
+.reg-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.reg-btn:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 7px;
+  text-align: center;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  .login-heading {
+    font-size: 1.8rem;
+  }
+}
